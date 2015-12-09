@@ -26,8 +26,11 @@ Simply reference the full qualified name of the storage (should be an existant d
 ```java
 org.kevoree.modeling.cdn.KContentDeliveryDriver levelDBDriver = 
 	new org.kevoree.modeling.plugin.LevelDBPlugin("/opt/kmf_storage");
-model = new MyModel(DataManagerBuilder.create().withContentDeliveryDriver(levelDBDriver).build(););
-
+model = new MyModel(
+    DataManagerBuilder.create()
+    .withContentDeliveryDriver(levelDBDriver)
+    .build()
+    );
 ```
 
 To have more information about KMF Storage Plugin using, please visit the following tutorial step:
