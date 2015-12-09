@@ -1,4 +1,4 @@
-package org.kevoree.modeling.drivers.leveldb;
+package org.kevoree.modeling.plugin;
 
 import org.fusesource.leveldbjni.JniDBFactory;
 import org.iq80.leveldb.DB;
@@ -17,7 +17,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Random;
 
-public class LevelDbContentDeliveryDriver implements KContentDeliveryDriver {
+public class LevelDBPlugin implements KContentDeliveryDriver {
 
     private final Options options = new Options().createIfMissing(true);
 
@@ -27,7 +27,7 @@ public class LevelDbContentDeliveryDriver implements KContentDeliveryDriver {
 
     private boolean _isConnected = false;
 
-    public LevelDbContentDeliveryDriver(String p_storagePath) throws IOException {
+    public LevelDBPlugin(String p_storagePath) throws IOException {
         this._storagePath = p_storagePath;
     }
 

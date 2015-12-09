@@ -1,9 +1,8 @@
-package org.kevoree.modeling.drivers.leveldb;
+package org.kevoree.modeling.plugin;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.kevoree.modeling.KCallback;
-import org.kevoree.modeling.KContentKey;
 
 import java.io.IOException;
 
@@ -15,7 +14,7 @@ public class LevelDbTest {
     @Test
     public void test() throws IOException {
 
-        final LevelDbContentDeliveryDriver driver = new LevelDbContentDeliveryDriver("target/temp");
+        final LevelDBPlugin driver = new LevelDBPlugin("target/temp");
         driver.connect(new KCallback<Throwable>() {
             @Override
             public void on(Throwable throwable) {
