@@ -30,3 +30,6 @@ model = new MyModel(DataManagerBuilder.create().withContentDeliveryDriver(levelD
 
 ```
 
+To have more information about KMF Storage Plugin using, please visit the following tutorial step:
+
+https://github.com/kevoree-modeling/tutorial/tree/master/step2_persistence
