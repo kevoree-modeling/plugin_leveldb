@@ -24,8 +24,11 @@ The LevelDBPlugin is the main entry point for this plugin.
 Simply reference the full qualified name of the storage (should be an existant directory).
 
 ```java
-org.kevoree.modeling.cdn.KContentDeliveryDriver levelDBDriver = 
-	new org.kevoree.modeling.plugin.LevelDBPlugin("/opt/kmf_storage");
+import org.kevoree.modeling.cdn.KContentDeliveryDriver;
+import org.kevoree.modeling.plugin.LevelDBPlugin;
+
+KContentDeliveryDriver levelDBDriver = 
+	new LevelDBPlugin("/opt/kmf_storage");
 model = new MyModel(
     DataManagerBuilder.create()
     .withContentDeliveryDriver(levelDBDriver)
