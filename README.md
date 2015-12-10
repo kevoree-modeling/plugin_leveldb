@@ -8,7 +8,7 @@ This feature both boost the performance by avoiding network or Inter-Processus c
 
 ## Last versions:
 
-- 4.27.0 compatible since KMF framework 4.27.0 
+- 4.27.0 compatible with KMF framework 4.27.x
 
 ## Changelog
 
