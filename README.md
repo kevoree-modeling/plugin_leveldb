@@ -6,6 +6,14 @@ LevelDB offers a very efficient storage that can handle billions of KMF elements
 This plugin does not rely on an external server.
 This feature both boost the performance by avoiding network or Inter-Processus communications and in addition sipplify a lot the configuration because only require a target directory to persist model on disk.
 
+## Last versions:
+
+- 4.27.0 compatible since KMF framework 4.27.0 
+
+## Changelog
+
+- 4.27.0 use LevelDB JNI in version 1.8
+
 ## Dependency
 
 Simply add the following dependency to your maven project:
@@ -14,7 +22,7 @@ Simply add the following dependency to your maven project:
 <dependency>
     <groupId>org.kevoree.modeling.plugin</groupId>
     <artifactId>leveldb</artifactId>
-    <version>4.27.0</version>
+    <version>REPLACE_BY_LAST_VERSION</version>
 </dependency>
 ```
 
